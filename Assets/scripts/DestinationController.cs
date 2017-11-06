@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DestinationController : MonoBehaviour {
 
-	Vector3 mousePosition, targetPosition;
 	public AgentController agent;
 
 	void FixedUpdate() {

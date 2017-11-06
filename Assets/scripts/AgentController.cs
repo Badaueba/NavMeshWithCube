@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class NavDestination : MonoBehaviour {
+public class AgentController : MonoBehaviour {
 
 	public Transform destination; 
 	NavMeshAgent navMeshAgent;
@@ -14,7 +14,7 @@ public class NavDestination : MonoBehaviour {
 		Go ();
 	}
 	
-	void Go() {
+	public void Go () {
 		if (destination != null) {
 			Vector3 pos = destination.position;
 			navMeshAgent.SetDestination (pos);
